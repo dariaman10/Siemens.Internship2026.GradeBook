@@ -1,0 +1,30 @@
+EXPLANATIONS OF THE VIOLATIONS
+
+
+
+1)SINGLE RESPONSIBILITY PRINCIPLE -> LOCATED IN ItemController.cs -> GetAll()
+  
+  Why is it a violation? 
+     SRP says that a class/method must have only one motive for change,but in the code,SRP has a lot of responsibilites.
+
+   Fixes I applied: I reduced the logic outside the controller and used ILogger instead of Console.WriteLine.
+
+
+
+2)SINGLE RESPONSIBILITY PRINCIPLE ->LOCATED IN ItemController.cs -> GetById()
+
+  Why is it a violation?
+     The controller should not bear logging low-level.
+
+  Fixes I applied: I made a standard logging.
+
+
+3)OPEN/CLOSE PRINCIPLE -> LOCATED IN itemController.cs ->GetAll()
+
+  Why is it a violation?
+      API's structure cannot be reused,it has to be changed directly in the controller.
+
+  Fixes I applied: simple structure.
+
+
+	
